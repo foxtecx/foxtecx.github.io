@@ -111,7 +111,6 @@ td {
 
 #hero {
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -121,7 +120,7 @@ td {
             rgba(0, 0, 0, 0.5)), url("imagenes/fondogamer.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 #hero h1 {
@@ -338,17 +337,26 @@ section[id] {
 }
 
 .product-txt p {
+    font-weight: bold;
     margin-bottom: 20px;
-    color: grey;
+    color: rgb(51, 175, 40);
+    font-weight: bold;
+    font-family: "Lexand Deca", sans-serif;
+}
+
+.product-txt .rojo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(212, 31, 31);
     font-weight: bold;
     font-family: "Lexand Deca", sans-serif;
 }
 
 .precio {
-    font-family: "Lexand Deca", sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    color: #D93904 !important;
+    font-family: "Bebas Neue", sans-serif !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff1e00 !important;
 }
 
 .btn-2,
@@ -1183,6 +1191,21 @@ div.newsletter-caja {
     img#img-carrito {
         height: 30px;
         width: auto;
+    }
+
+    /* Portada img */
+
+    #hero {
+        height: 9cm;
+    }
+
+    #hero h1 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 20px;
+        border-radius: 5px;
     }
 
     /* Portada texto */
