@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap&family=Timmana&display=swap&family=Acme&display=swap&family=Protest+Strike&display=swap&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap&family=Timmana&display=swap&family=Acme&display=swap&family=Protest+Strike&display=swap&family=Lexend+Deca:wght@100..900&display=swap&family=Poppins:wght@500&display=swap');
 
 
 
@@ -34,9 +34,9 @@ header a:hover {
     color: #D93904;
 }
 
-.logo {
-    width: 220px;
-    height: auto;
+.logo img {
+    width: auto;
+    height: 80px;
 }
 
 .hamburguesa {
@@ -118,7 +118,7 @@ td {
     height: 22cm;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("imagenes/fondogamer.jpg");
+            rgba(0, 0, 0, 0.5)), url("imagenes/fondogamer.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -133,8 +133,10 @@ td {
 }
 
 button {
+    cursor: pointer;
+    border: 0;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     padding: 5px 10px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -167,32 +169,27 @@ button:hover {
     justify-content: center;
 }
 
+#foxtec img {
+    height: 450px;
+    width: auto;
+    background-color: #D93904;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
 #foxtec .texto p {
-    font-family: "Acme", sans-serif;
-    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
     text-align: justify;
     text-transform: none;
 }
 
-#foxtec h2 {
-    font-family: "Protest Strike", sans-serif;
-    font-size: 3.8em;
-}
-
-#foxtec .img-container {
-    background-image: url("imagenes/sitiogamer.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 450px;
-    width: 700px;
-    box-shadow: 2px 2px 10px rgb(30, 30, 30);
-}
 
 #foxtec .container .texto h2 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Protest Strike", sans-serif;
     text-align: left;
     padding: 0%;
+    font-size: 48px;
 }
 
 span {
@@ -213,10 +210,6 @@ section[id] {
 .oferts.container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
 }
 
 .oferts {
@@ -256,20 +249,23 @@ img {
 }
 
 .ofert-txt h3 {
+    font-weight: 0;
+    color: white;
     font-size: 30px;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .ofert-txt a {
     font-size: 25px;
-    color: white;
+    color: black;
     font-family: "Bebas Neue", sans-serif;
 }
 
-.ofert-img {
-    flex-basis: 70%;
+#oferts .ofert-img .zoom {
     display: flex;
     align-items: center;
+    width: auto;
+    height: 180px;
 }
 
 .ofert-1 .zoom {
@@ -289,26 +285,28 @@ img {
 }
 
 .products {
-    padding: 0 0 50px 0;
+    padding: 0 0 40px 0;
     text-align: center;
 }
 
-h2 {
+.products.container h2 {
+    margin-top: 50px;
     font-size: 40px;
     color: black;
     font-family: "Protest Strike", sans-serif;
+    background-color: rgb(241, 241, 241);
 }
 
 .box-container {
-    margin-top: 55px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .box {
-    border-top: 2px solid black;
-    border-bottom: 2px solid #D93904;
+    border-top: 3px solid black;
+    border-bottom: 3px solid #D93904;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -329,6 +327,7 @@ h2 {
 
 .box img {
     height: 200px;
+    width: auto;
 }
 
 .product-txt h3 {
@@ -444,6 +443,16 @@ h2 {
     text-transform: none;
 }
 
+.footer-link ul li p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
 .footer-link ul li a {
     font-family: "Bebas Neue", sans-serif;
     font-size: 25px;
@@ -519,14 +528,20 @@ div.newsletter-caja {
 }
 
 .newsletter-caja button {
-    padding: 10px 25px;
-    background-color: #D93904;
+    background-color: #b40000;
+    padding: 13px 25px 0 25px;
     border-radius: 10px;
     width: 100%;
     height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.newsletter-caja button:hover {
+    background-color: #D93904;
+
+
 }
 
 .btn2-2 {
@@ -549,7 +564,11 @@ div.newsletter-caja {
     }
 }
 
-.footer-2 a p:hover {
+.footer-2 p.derechos {
+    cursor: pointer;
+}
+
+.footer-2 p.derechos:hover {
     color: #D93904;
 }
 
@@ -576,15 +595,15 @@ div.newsletter-caja {
 
     header {
         width: 100%;
-        height: 110px;
+        height: 80px;
         display: flex;
         align-items: center;
         padding: 0 50px;
         background-color: whitesmoke;
     }
 
-    .logo {
-        width: 220px;
+    .logo img {
+        width: 180px;
         height: auto;
     }
 
@@ -622,6 +641,12 @@ div.newsletter-caja {
 
     /* Portada texto */
 
+    #foxtec img {
+        height: 270px;
+        width: 400px;
+        margin-left: 50px;
+    }
+
     #foxtec {
         margin-top: 1cm;
         margin-bottom: 1cm;
@@ -639,27 +664,23 @@ div.newsletter-caja {
         justify-content: center;
     }
 
-
     #foxtec .texto p {
-        font-size: 19px;
-        margin: 0 45px 0 0;
+        font-size: 15px;
+        margin-right: 50px;
+        margin-left: 20px;
     }
 
-    #foxtec h2 {
-        font-size: 3em;
-        margin: 0;
-    }
-
-    #foxtec .img-container {
-        background-size: cover;
-        background-position: center center;
-        height: 270px;
-        width: 340px;
-        margin-right: 30px;
-        margin-left: 50px;
+    #foxtec .container .texto h2 {
+        margin-left: 20px;
+        font-size: 38px;
     }
 
     /* Categorias */
+
+    #oferts .ofert-img .zoom {
+        height: 150px;
+        width: auto;
+    }
 
     .oferts.container img {
         padding: 10px;
@@ -674,18 +695,15 @@ div.newsletter-caja {
     }
 
     .ofert-txt h3 {
+        font-weight: normal;
+
         font-size: 25px;
-        font-family: "Bebas Neue", sans-serif;
     }
 
     .ofert-txt a {
-        font-size: 20px;
-        color: white;
+        font-size: 24px;
+        color: black;
         font-family: "Bebas Neue", sans-serif;
-    }
-
-    .ofert-img {
-        flex-basis: 50%;
     }
 
     .ofert-1 {
@@ -738,6 +756,10 @@ div.newsletter-caja {
         color: #D93904;
         margin-bottom: 10px;
         padding-bottom: 10px;
+    }
+
+    .footer-link ul li p {
+        font-size: 20px;
     }
 
     .footer-link ul li a {
@@ -804,9 +826,9 @@ div.newsletter-caja {
 @media (max-width: 769px) {
 
     /* Header & nav */
-    .logo {
-        width: 200px;
-        height: auto;
+    .logo img {
+        width: auto;
+        height: 55px;
         display: flex;
         align-items: center;
     }
@@ -815,7 +837,7 @@ div.newsletter-caja {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 90px;
+        height: 80px;
         padding: 0 40px;
         background-color: whitesmoke;
     }
@@ -836,7 +858,7 @@ div.newsletter-caja {
     .nav-bar {
         height: 0;
         position: absolute;
-        top: 90px;
+        top: 80px;
         left: 0;
         right: 0;
         width: 100vw;
@@ -846,7 +868,7 @@ div.newsletter-caja {
     }
 
     .nav-bar.active {
-        height: 450px;
+        height: 400px;
     }
 
     .nav-bar.active a {
@@ -866,18 +888,27 @@ div.newsletter-caja {
         transition: 0.5s;
     }
 
+    .nav-bar.active ul li a {
+        color: white;
+        font-weight: normal;
+    }
+
     .nav-bar.active ul {
         opacity: 1;
     }
 
     .nav-bar ul li a {
+        color: white;
+        font-weight: normal;
         margin-bottom: 12px;
+        font-size: 22px;
+        padding: 10px 15px;
     }
 
     /* Carrito */
 
     img#img-carrito {
-        height: 35px;
+        height: 30px;
         width: auto;
     }
 
@@ -900,26 +931,46 @@ div.newsletter-caja {
 
     /* Portada texto */
 
+    #foxtec img {
+        display: none;
+    }
+
+    #foxtec {
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+
+    #foxtec .container {
+        align-items: center;
+    }
+
+    #foxtec .texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
     #foxtec .texto p {
-        font-size: 16px;
-        margin: 0 45px 0 0;
+        font-size: 18px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
-    #foxtec h2 {
-        font-size: 2.5em;
-        margin: 0;
-    }
+    #foxtec .container .texto h2 {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 38px;
+        text-align: center;
 
-    #foxtec .img-container {
-        background-size: cover;
-        background-position: center center;
-        height: 270px;
-        width: 340px;
-        margin-right: 30px;
-        margin-left: 50px;
     }
 
     /* Categorias */
+
+    #oferts .ofert-img .zoom {
+        height: 230px;
+        width: auto;
+    }
 
     .oferts.container img {
         padding: 10px;
@@ -935,18 +986,14 @@ div.newsletter-caja {
     }
 
     .ofert-txt h3 {
-        font-size: 40px;
+        font-size: 37px;
         font-family: "Bebas Neue", sans-serif;
     }
 
     .ofert-txt a {
         font-size: 30px;
-        color: white;
+        color: black;
         font-family: "Bebas Neue", sans-serif;
-    }
-
-    .ofert-img {
-        flex-basis: 50%;
     }
 
     .ofert-1 {
@@ -994,6 +1041,10 @@ div.newsletter-caja {
         color: #D93904;
         margin-bottom: 10px;
         padding-bottom: 5px;
+    }
+
+    .footer-link ul li p {
+        font-size: 17px;
     }
 
     .footer-link ul li a {
@@ -1055,9 +1106,9 @@ div.newsletter-caja {
 @media (max-width: 426px) {
 
     /* Header & nav */
-    .logo {
-        width: 150px;
-        height: auto;
+    .logo img {
+        width: auto;
+        height: 50px;
         display: flex;
         align-items: center;
     }
@@ -1066,7 +1117,7 @@ div.newsletter-caja {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 90px;
+        height: 70px;
         padding: 0 10px;
         background-color: whitesmoke;
     }
@@ -1087,7 +1138,7 @@ div.newsletter-caja {
     .nav-bar {
         height: 0;
         position: absolute;
-        top: 90px;
+        top: 70px;
         left: 0;
         right: 0;
         width: 100vw;
@@ -1097,15 +1148,15 @@ div.newsletter-caja {
     }
 
     .nav-bar.active {
-        height: 450px;
+        height: 400px;
     }
 
     .nav-bar.active a {
-        color: black;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .nav-bar.active a:hover {
+        font-weight: normal;
         color: white;
     }
 
@@ -1122,6 +1173,8 @@ div.newsletter-caja {
     }
 
     .nav-bar ul li a {
+        font-weight: normal;
+        font-size: 20px;
         margin-bottom: 12px;
     }
 
@@ -1134,49 +1187,49 @@ div.newsletter-caja {
 
     /* Portada texto */
 
-    div.container {
-        display: flex;
-        flex-direction: column;
-        margin: 0 30px;
-    }
-
-    #foxtec .texto {
-        width: 100%;
-        height: auto;
-    }
-
-    #foxtec .texto p {
-        font-size: 16px;
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    div.container h2 {
-        text-align: center !important;
+    #foxtec img {
+        display: none;
     }
 
     #foxtec {
-        margin: o;
+        margin-top: 1cm;
+        margin-bottom: 0c;
     }
 
-    #foxtec h2 {
-        font-size: 1.8em;
-        padding: 5px;
-        text-align: center;
+    #foxtec .texto {
+        margin: 0;
     }
 
-    #foxtec .img-container {
-        background-size: cover;
-        background-position: center center;
-        height: 250px;
-        width: 340px;
-        margin-right: 0px;
+    #foxtec .texto p {
+        font-size: 14px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    #foxtec .container .texto h2 {
+        margin-bottom: 20px;
         margin-left: 0px;
-        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+
     }
 
     /* Categorias */
+
+    #oferts .ofert-img .zoom {
+        height: 150px;
+        width: auto;
+    }
+
+    .oferts h3 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .oferts a {
+        color: black;
+        font-size: 23px;
+    }
 
     .oferts {
         padding: 30px;
@@ -1188,6 +1241,10 @@ div.newsletter-caja {
     }
 
     /* Productos */
+
+    .products.container h2 {
+        font-size: 35px;
+    }
 
     .products {
         padding: 0 30px 30px 30px;
@@ -1238,6 +1295,8 @@ div.newsletter-caja {
     }
 
     .footer-row {
+        margin-left: 20px;
+        margin-right: 20px;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -1261,14 +1320,12 @@ div.newsletter-caja {
         text-transform: none;
     }
 
-    .footer-link ul li a {
-        font-family: "Bebas Neue", sans-serif;
+    .footer-link ul li p {
         font-size: 19px;
-        text-decoration: none;
-        color: #ffffff;
-        display: block;
-        margin-bottom: 5px;
-        transition: all .3s ease;
+    }
+
+    .footer-link ul li a {
+        font-size: 19px;
     }
 
     .footer-link ul li a:hover {
