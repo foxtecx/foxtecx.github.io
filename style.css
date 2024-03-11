@@ -1137,7 +1137,7 @@ div.newsletter-caja {
     }
 
     .hamburguesa .line {
-        width: 30px;
+        width: 28px;
         height: 4px;
         background: #D93904;
         margin: 6px 0 6px 3cm;
@@ -1192,22 +1192,24 @@ div.newsletter-caja {
     img#img-carrito {
         height: 30px;
         width: auto;
+        padding-left: 15px;
     }
 
     /* Portada img */
 
     #hero {
-        height: 7cm;
+        height: 10cm;
+        width: auto;
     }
 
 
     #hero h1 {
-        font-size: 25px;
+        font-size: 36px;
         font-weight: normal;
     }
 
     button {
-        font-size: 19px;
+        font-size: 23px;
         border-radius: 5px;
     }
 
