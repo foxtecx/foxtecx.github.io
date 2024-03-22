@@ -727,7 +727,7 @@ button:hover {
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 480px) {
 
     /* Header & nav */
     .logo img {
@@ -811,7 +811,7 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        max-width: 425px;
+        max-width: 480px;
         padding: 2rem 2rem;
     }
 
@@ -842,7 +842,7 @@ button:hover {
 
     .cuadro {
         width: 100%;
-        max-width: 425px;
+        max-width: 480px;
         height: auto;
         padding: 2rem;
         display: flex;
@@ -883,7 +883,7 @@ button:hover {
 
     .footer-test p {
         font-family: "Poppins", sans-serif;
-        max-width: 450px;
+        max-width: 480px;
         margin: auto;
         font-size: 1rem;
         line-height: 1.5rem;
