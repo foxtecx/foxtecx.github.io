@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contactos.css">
+    <link rel="shortcut icon" href="imagenes/isotipotec.webp" type="image/x-icon">
+    <title>FoxTec</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logofoxtec.webp" alt="imagotipo-foxtec" width="1200px" height="423px">
+        </div>
+        <div class="hamburguesa">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+                <li><a href="testimonios.html">TESTIMONIOS</a></li>
+                <li><a href="nosotros.html">¿QUIÉNES SOMOS?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        hamburguesa = document.querySelector(".hamburguesa");
+        hamburguesa.onclick = function () {
+            navbar = document.querySelector(".nav-bar")
+            navbar.classList.toggle("active");
+        }
+    </script>
+
+    <main>
+        <section class="contactos-foxtec">
+            <div class="contactos-header">
+                <div class="contacto">
+                    <h2>CONTÁC<span>TANOS</span></h2>
+                    <p>En FoxTec, valoramos tu opinión y estamos aquí para ayudarte en todo lo que necesites. No dudes
+                        en
+                        ponerte en contacto con nosotros para cualquier consulta, comentario o sugerencia que tengas.
+                        Estamos disponibles a través de los siguientes medios:</p>
+                </div>
+            </div>
+
+            <div class="contacto">
+                <div class="row">
+
+                    <div class="contacto-info">
+                        <div class="contacto-info-item">
+
+                            <div class="contacto-info-icon">
+                                <i class="bi bi-house"></i>
+                            </div>
+
+                            <div class="contacto-info-text">
+                                <h4>Dirección</h4>
+                                <p>Av. 28 de Julio 181 - Huacho</p>
+                            </div>
+
+                        </div>
+
+                        <div class="contacto-info-item">
+
+                            <div class="contacto-info-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <div class="contacto-info-text">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+51917125825">917125825</a>
+                            </div>
+
+                        </div>
+
+                        <div class="contacto-info-item">
+
+                            <div class="contacto-info-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+
+                            <div class="contacto-info-text">
+                                <h4>Correo Electrónico</h4>
+                                <a href="mailto:">footexx08@gmail</a>
+                            </div>
+
+                        </div>
+
+                        <div class="contacto-info-item">
+
+                            <div class="contacto-info-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+
+                            <div class="contacto-info-text">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 9:00 a.m. - 8:00 p.m. <br>Sábado: 10:00 a.m. - 6:00 p.m.
+                                    <br>Domingo:Cerrado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form">
+                        <form id="contacto-form" action="https://formsubmit.co/footexx08@gmail.com" method="POST">
+                            <h2>Enviar Mensaje</h2>
+                            <div class="input-box">
+                                <input type="text" name="name" required="true">
+                                <span>Nombre completo</span>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="email" name="email" required="true">
+                                <span>E-mail</span>
+                            </div>
+
+                            <div class="input-box">
+                                <textarea required="true"></textarea>
+                                <span>Escribe tu mensaje...</span>
+                            </div>
+
+                            <div class="input-box">
+                                <input class="email" name="email" type="submit" value="ENVIAR">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="redes-contacto">
+                        <h2>REDES<span> SOCIALES</span></h2>
+                        <P>Conéctate con nosotros a través de nuestras redes sociales para mantenerte informado sobre
+                            las
+                            últimas novedades, promociones especiales y eventos:</P>
+                        <div class="social-link">
+
+                            <a href="https://www.facebook.com/profile.php?id=61556807535003"><img src="imagenes/fb.webp"
+                                    alt="facebook-icono" width="300px" height="300px"></a>
+
+                            <a href="https://www.instagram.com/foxtec_peru/"><img src="imagenes/ig.webp"
+                                    alt="instagram-icono" width="300px" height="300px"></a>
+
+                            <a href="https://www.youtube.com/@foxtec_peru"><img src="imagenes/yt.webp"
+                                    alt="youtube-icono" width="300px" height="300px"></a>
+
+                            <a href="https://www.tiktok.com/@foxtec_peru"><img src="imagenes/tk.webp" alt="tiktok-icono"
+                                    width="300px" height="300px"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer1">
+        <div class="foot container">
+            <div class="footer-row">
+                <div class="footer-link">
+
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li>
+                            <p>Nosotros</p>
+                        </li>
+                        <li>
+                            <p>Nuestros servicios</p>
+                        </li>
+                        <li>
+                            <p>Política de privacidad</p>
+                        </li>
+                        <li>
+                            <p>Pedidos</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+
+                    <h4>Atención al cliente</h4>
+                    <ul>
+                        <li>
+                            <p>Preguntas</p>
+                        </li>
+                        <li>
+                            <p>Compras</p>
+                        </li>
+                        <li>
+                            <p>Envios</p>
+                        </li>
+                        <li>
+                            <p>Pagos</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-link">
+
+                    <h4>Inicio</h4>
+                    <ul>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="testimonios.html">testimonios</a></li>
+                        <li><a href="nosotros.html">¿quienes somos?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+
+                        <a href="https://www.facebook.com/profile.php?id=61556807535003"><img src="imagenes/fb.webp"
+                                alt="facebook-icono" width="300px" height="300px"></a>
+
+                        <a href="https://www.instagram.com/foxtec_peru/"><img src="imagenes/ig.webp"
+                                alt="instagram-icono" width="300px" height="300px"></a>
+
+                        <a href="https://www.youtube.com/@foxtec_peru"><img src="imagenes/yt.webp" alt="youtube-icono"
+                                width="300px" height="300px"></a>
+
+                        <a href="https://www.tiktok.com/@foxtec_peru"><img src="imagenes/tk.webp" alt="tiktok-icono"
+                                width="300px" height="300px"></a>
+
+                    </div>
+                    <div class="newsletter">
+                        <p class="titulo">Nuestro boletín</p>
+                        <p>¡Suscríbete a nuestra web y recibe las mejores ofertas GRATIS!</p>
+                        <form action="https://formsubmit.co/footexx08@gmail.com" method="POST">
+                            <div class="newsletter-caja">
+                                <input type="email" name="email" id="email" placeholder="Escribe tu email aquí..."
+                                    required>
+                                <button type="submit">Suscribir</button>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-2">
+                <p>FoxTec 2024 © Todos los derechos reservados</p>
+
+                <p class="derechos">Políticas de privacidad y uso de datos</p>
+
+
+                <p class="derechos">Términos y Condiciones</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <section id="chatwp">
+        <div class="whatsapp" id="whatsapp">
+            <a
+                href="https://wa.me/51917125825/?text=¡Hola! Estoy interesado en comprar una computadora. ¿Puedes ayudarme?">
+                <img src="imagenes/WhatsApp.svg.webp" alt="whatsapp-icono" width="640px" height="644px">
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
