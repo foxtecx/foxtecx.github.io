@@ -929,12 +929,44 @@ button:hover {
         margin-top: 17%;
     }
 
+    .contactos-foxtec h2 {
+        font-size: 26px;
+        font-weight: normal;
+    }
+
     .contacto-info {
         width: 100%;
     }
 
+    .contacto p {
+        font-size: 14px;
+    }
+
     .contacto-info-text p {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .contacto-info-text h4 {
+        font-size: 22px;
+    }
+
+    .contacto-info-text a {
+        font-size: 14px;
+    }
+
+    .contacto-info-item .contacto-info-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .contacto-info-item .contacto-info-icon i {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 52px;
+    }
+
+    .contacto-form h2 {
+        font-size: 23px;
     }
 
     /* Footer */
