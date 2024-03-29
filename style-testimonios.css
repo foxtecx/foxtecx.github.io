@@ -813,7 +813,7 @@ button:hover {
     header {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: auto;
         height: 70px;
         padding: 0 40px;
         background-color: whitesmoke;
