@@ -107,6 +107,54 @@ td {
     cursor: pointer;
 }
 
+/*ad rascacielos*/
+
+#ad1 {
+    position: fixed;
+    top: 170px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.ad1 {
+    padding: 0;
+
+    & img {
+        width: 160px;
+        height: auto;
+    }
+}
+
+/* cerrar ad */
+
+button#boton-cerrar {
+    background-color: transparent;
+}
+
+#boton-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 0px;
+    padding-right: 4px;
+    cursor: pointer;
+
+    & img {
+        width: 20px;
+        height: auto;
+        background-color: #000000;
+        border-radius: 100px;
+        transition: transform 0.5s ease;
+    }
+
+    & img:hover {
+        background-color: #D93904;
+        transform: scale(1.2);
+    }
+
+}
+
+
 /* Portada img */
 
 #hero {
@@ -600,7 +648,7 @@ div.newsletter-caja {
     /* Header & nav */
 
     header {
-        width: 100%;
+        width: auto;
         height: 80px;
         display: flex;
         align-items: center;
@@ -628,6 +676,15 @@ div.newsletter-caja {
         height: 25px;
         width: auto;
     }
+
+    /*ad rascacielos*/
+
+    #ad1 {
+        top: 100px;
+        right: 10px;
+        cursor: pointer;
+    }
+
 
     /* Portada img */
 
@@ -916,6 +973,14 @@ div.newsletter-caja {
     img#img-carrito {
         height: 30px;
         width: auto;
+    }
+
+    /*ad rascacielos*/
+
+    #ad2 {
+        top: 90px;
+        right: 7px;
+        cursor: pointer;
     }
 
     /* Portada img */

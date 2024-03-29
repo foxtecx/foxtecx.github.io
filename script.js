@@ -12,6 +12,13 @@ loadMoreBtn.onclick = () => {
     }
 }
 
+//hamburguesa
+hamburguesa = document.querySelector(".hamburguesa");
+hamburguesa.onclick = function () {
+    navbar = document.querySelector(".nav-bar")
+    navbar.classList.toggle("active");
+}
+
 //carrito
 const carrito = document.getElementById('carrito');
 const elementos1 = document.getElementById('lista-1');
@@ -86,4 +93,23 @@ function vaciarCarrito() {
         lista.removeChild(lista.firstChild);
     }
     return false;
+}
+
+function ocultar() {
+    document.getElementById('ad1').style.display = 'none';
+}
+
+function ocultar2() {
+    document.getElementById('ad2').style.display = 'none';
+}
+
+function ocultar3() {
+    document.getElementById('ad3').style.display = 'none';
+}
+function ocultar4() {
+    document.getElementById('ad4').style.display = 'none';
+}
+
+function ocultar5() {
+    document.getElementById('ad1').style.display = 'none';
 }

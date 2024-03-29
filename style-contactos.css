@@ -15,6 +15,7 @@ html {
 
 /* Header y nav */
 header {
+    z-index: 1;
     position: fixed;
     box-shadow: 2px 2px 10px #D93904;
 }
@@ -279,10 +280,58 @@ input {
 
 }
 
+/*ad robapaginas*/
+
+#ad2 {
+    padding: 0;
+}
+
+.ad2 {
+    position: relative;
+    width: 300px;
+    top: 0px;
+}
+
+.ad2 {
+    left: 0;
+}
+
+/* cerrar ad */
+
+button#boton-cerrar {
+    background-color: transparent;
+}
+
+#boton-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    padding-right: 4px;
+    cursor: pointer;
+
+    & img {
+        width: 20px;
+        height: auto;
+        background-color: #000000;
+        border-radius: 100px;
+        transition: transform 0.5s ease;
+    }
+
+    & img:hover {
+        background-color: #D93904;
+        transform: scale(1.2);
+    }
+
+}
+
 /* Contacto Redes*/
+.redes-contac {
+    padding: 0;
+}
 
 .redes-contacto {
-    padding-top: 50px;
+    padding-top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -538,7 +587,6 @@ button:hover {
         padding: 10px 15px;
     }
 
-
     /* Footer */
 
     .footer1 {
@@ -698,6 +746,9 @@ button:hover {
         font-size: 22px;
         padding: 10px 15px;
     }
+
+    /* cerrar ad */
+
 
     /*Contactos*/
 
@@ -922,6 +973,10 @@ button:hover {
         font-size: 20px;
         margin-bottom: 12px;
     }
+
+    /* cerrar ad */
+
+
 
     /*Contactos*/
 

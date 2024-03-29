@@ -58,6 +58,52 @@ header a:hover {
     color: #D93904;
 }
 
+/*ad skin*/
+
+.ad3,
+.ad4 {
+    position: absolute;
+    width: 160px;
+    top: 295px;
+}
+
+.ad3 {
+    left: 10px;
+}
+
+.ad4 {
+    right: 10px;
+}
+
+/* cerrar ad */
+
+button#boton-cerrar {
+    background-color: transparent;
+}
+
+#boton-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 0px;
+    padding-right: 4px;
+    cursor: pointer;
+
+    & img {
+        width: 20px;
+        height: auto;
+        background-color: #000000;
+        border-radius: 100px;
+        transition: transform 0.5s ease;
+    }
+
+    & img:hover {
+        background-color: #D93904;
+        transform: scale(1.2);
+    }
+
+}
+
 /*Testimonios*/
 
 main {
@@ -393,6 +439,24 @@ button:hover {
         padding: 10px 15px;
     }
 
+    /* ad skin */
+
+    .ads-skin-1,
+    .ads-skin-2 {
+        position: absolute;
+        width: 160px;
+        top: 230px;
+    }
+
+    .ads-skin-1 {
+        left: 0px;
+    }
+
+    .ads-skin-2 {
+        right: 0px;
+    }
+
+
     /*Testimonios*/
 
     .testimonios {
@@ -574,6 +638,15 @@ button:hover {
         padding: 10px 15px;
     }
 
+    /* ad skin */
+
+    .ads-skin-1,
+    .ads-skin-2 {
+        position: absolute;
+        width: 160px;
+        top: 198px;
+    }
+
     /*Testimonios*/
 
     .testimonios {
@@ -727,7 +800,7 @@ button:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 426px) {
 
     /* Header & nav */
     .logo img {
@@ -811,7 +884,7 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        max-width: 480px;
+        max-width: 426px;
         padding: 2rem 2rem;
     }
 
@@ -842,7 +915,7 @@ button:hover {
 
     .cuadro {
         width: 100%;
-        max-width: 480px;
+        max-width: 426px;
         height: auto;
         padding: 2rem;
         display: flex;
@@ -867,7 +940,7 @@ button:hover {
     }
 
     .cuadro img {
-        width: 280px;
+        width: auto;
         height: 180px;
         margin: auto;
         border: 8px ridge rgba(189, 189, 189, 0.288);
@@ -883,7 +956,7 @@ button:hover {
 
     .footer-test p {
         font-family: "Poppins", sans-serif;
-        max-width: 480px;
+        max-width: 426px;
         margin: auto;
         font-size: 1rem;
         line-height: 1.5rem;

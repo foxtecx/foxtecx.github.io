@@ -15,6 +15,7 @@ html {
 
 /* Header y nav */
 header {
+    z-index: 1;
     position: fixed;
     box-shadow: 2px 2px 10px #D93904;
 }
@@ -70,14 +71,14 @@ main {
 }
 
 .nosotros {
-    margin-top: 7%;
+
     width: 100%;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     overflow-x: hidden;
-    padding: 2rem 0;
+    padding: 8rem 0 0 0;
 }
 
 .nosotros .img-foxtec {
@@ -85,8 +86,10 @@ main {
 }
 
 .nosotros .img-foxtec img {
-    width: 100%;
-    height: 100%;
+    width: 575px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     object-fit: cover;
     transition: 0.3s;
     border: 10px ridge #D93904;
@@ -143,6 +146,53 @@ main {
     font-size: 16px;
     line-height: 25px;
 }
+
+/*ad1*/
+
+#ad1 {
+    padding: 0;
+}
+
+.ad1 {
+    position: relative;
+    width: 728px;
+    top: 111px;
+}
+
+.ad1 {
+    left: 0;
+}
+
+
+/* cerrar ad */
+
+button#boton-cerrar {
+    background-color: transparent;
+}
+
+#boton-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    padding-right: 4px;
+    cursor: pointer;
+
+    & img {
+        width: 20px;
+        height: auto;
+        background-color: #000000;
+        border-radius: 100px;
+        transition: transform 0.5s ease;
+    }
+
+    & img:hover {
+        background-color: #D93904;
+        transform: scale(1.2);
+    }
+
+}
+
 
 /*Mision, Vision y valores*/
 
@@ -437,9 +487,29 @@ button:hover {
         padding: 10px 15px;
     }
 
+    /*ad1*/
+
+    #ad1 {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .ad1 {
+        padding: 0;
+
+        & img {
+            width: 728px;
+            height: auto;
+        }
+    }
+
+
     /*Nosotros 2*/
     .nosotros {
-        margin-top: 80px;
+        margin-top: 0px;
+        padding-top: 130px;
         grid-gap: 50px;
         display: flex;
         flex-direction: column;
@@ -718,6 +788,24 @@ button:hover {
         padding: 10px 15px;
     }
 
+    /*ad1*/
+
+    #ad1 {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .ad1 {
+        padding: 0;
+
+        & img {
+            width: 728px;
+            height: auto;
+        }
+    }
+
     /*Nosotros*/
 
     .mvv {
@@ -762,7 +850,8 @@ button:hover {
 
     /*Nosotros 2*/
     .nosotros {
-        margin-top: 80px;
+        margin-top: 0px;
+        padding-top: 130px;
         grid-gap: 50px;
         display: flex;
         flex-direction: column;
@@ -1028,6 +1117,25 @@ button:hover {
         margin-bottom: 12px;
     }
 
+    /*ad1*/
+
+    #ad1 {
+        padding-top: 0;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .ad1 {
+        padding: 0;
+
+        & img {
+            width: 425px;
+            height: auto;
+        }
+    }
+
     /*Nosotros*/
 
     .mvv {
@@ -1072,7 +1180,8 @@ button:hover {
 
     /*Nosotros 2*/
     .nosotros {
-        margin-top: 80px;
+        margin-top: 90px;
+        padding-top: 15px;
         grid-gap: 50px;
         display: flex;
         flex-direction: column;
