@@ -490,26 +490,24 @@ button:hover {
     /*ad1*/
 
     #ad1 {
-        position: fixed;
-        top: 80px;
-        right: 0;
-        cursor: pointer;
+        padding: 0;
     }
 
     .ad1 {
-        padding: 0;
+        position: relative;
+        width: 728px;
+        top: 80px;
+    }
 
-        & img {
-            width: 728px;
-            height: auto;
-        }
+    .ad1 {
+        left: 0;
     }
 
 
     /*Nosotros 2*/
     .nosotros {
         margin-top: 0px;
-        padding-top: 130px;
+        padding-top: 100px;
         grid-gap: 50px;
         display: flex;
         flex-direction: column;
@@ -791,19 +789,17 @@ button:hover {
     /*ad1*/
 
     #ad1 {
-        position: fixed;
-        top: 80px;
-        right: 0;
-        cursor: pointer;
+        padding: 0;
     }
 
     .ad1 {
-        padding: 0;
+        position: relative;
+        width: 728px;
+        top: 80px;
+    }
 
-        & img {
-            width: 728px;
-            height: auto;
-        }
+    .ad1 {
+        left: 0;
     }
 
     /*Nosotros*/
@@ -851,7 +847,7 @@ button:hover {
     /*Nosotros 2*/
     .nosotros {
         margin-top: 0px;
-        padding-top: 130px;
+        padding-top: 100px;
         grid-gap: 50px;
         display: flex;
         flex-direction: column;
@@ -1117,23 +1113,27 @@ button:hover {
         margin-bottom: 12px;
     }
 
+
     /*ad1*/
 
     #ad1 {
-        padding-top: 0;
-        position: fixed;
-        top: 70px;
-        right: 0;
-        cursor: pointer;
+        padding: 0;
     }
 
     .ad1 {
-        padding: 0;
+        position: relative;
+        width: 425px;
+        height: auto;
+        top: 70px;
+    }
 
-        & img {
-            width: 425px;
-            height: auto;
-        }
+    .ad1 img {
+        width: 425px;
+        height: auto;
+    }
+
+    .ad1 {
+        left: 0;
     }
 
     /*Nosotros*/
@@ -1180,7 +1180,7 @@ button:hover {
 
     /*Nosotros 2*/
     .nosotros {
-        margin-top: 90px;
+        margin-top: 70px;
         padding-top: 15px;
         grid-gap: 50px;
         display: flex;
