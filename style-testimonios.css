@@ -62,9 +62,9 @@ header a:hover {
 
 .ad3,
 .ad4 {
-    position: absolute;
+    position: fixed;
     width: 160px;
-    top: 295px;
+    top: 235px;
 }
 
 .ad3 {
@@ -104,13 +104,25 @@ button#boton-cerrar {
 
 }
 
+/*boton*/
+
+.nav-bar .contactos-boton li a {
+    color: white;
+    font-weight: normal;
+}
+
+.nav-bar .contactos-boton li a:hover {
+    color: #ffffff;
+}
+
+button.contactos-boton {
+    border-radius: 10px;
+}
+
 /*Testimonios*/
 
 main {
-    width: 100%;
-    min-height: 100vh;
     display: grid;
-    place-items: center;
     background-color: rgb(255, 255, 255);
 }
 
@@ -119,9 +131,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    max-width: 1500px;
-    padding: 2rem 0;
+    padding: 2rem 11rem;
 }
 
 .header-test {
@@ -133,17 +143,15 @@ main {
     color: #D93904;
     letter-spacing: 2px;
     font-size: 1.5rem;
-    font-weight: 500;
 }
 
 .header-test h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .testimonios-grid {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -412,6 +420,55 @@ button:hover {
     height: auto;
 }
 
+@media (max-width: 1441px) {
+
+    /*Testimonios*/
+
+    main {
+        display: grid;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .testimonios {
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 9rem;
+    }
+
+    .header-test {
+        margin-bottom: 2rem;
+    }
+
+    .header-test p {
+        font-family: "Protest Strike", sans-serif;
+        color: #D93904;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+
+    .header-test h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .testimonios-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cuadro {
+        padding: 2rem;
+        background-color: black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 30px #00000086;
+    }
+}
+
 @media (max-width: 1025px) {
 
     /* Header & nav */
@@ -465,14 +522,15 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        max-width: 1500px;
-        padding: 2rem 2rem;
+        max-width: auto;
+        padding: 2rem 10rem;
     }
 
     .testimonios-grid {
         width: 100%;
+        max-width: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 3fr);
         gap: 2rem;
         margin-bottom: 2rem;
     }
@@ -655,8 +713,7 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        max-width: 1500px;
-        padding: 2rem 5rem;
+        padding: 2rem 8rem;
     }
 
     .testimonios-grid {
@@ -665,6 +722,21 @@ button:hover {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         margin-bottom: 2rem;
+    }
+
+    .ad3 {
+        left: 0px;
+    }
+
+    .ad4 {
+        right: 0px;
+    }
+
+    .ad3,
+    .ad4 {
+        position: fixed;
+        width: 160px;
+        top: 130px;
     }
 
 
@@ -877,6 +949,11 @@ button:hover {
     }
 
     /*Testimonios*/
+
+    #ad3,
+    #ad4 {
+        display: none;
+    }
 
     .testimonios {
         margin-top: 13%;

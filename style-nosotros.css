@@ -60,6 +60,21 @@ header a:hover {
     color: #D93904;
 }
 
+/*boton*/
+
+.nav-bar .contactos-boton li a {
+    color: white;
+    font-weight: normal;
+}
+
+.nav-bar .contactos-boton li a:hover {
+    color: #ffffff;
+}
+
+button.contactos-boton {
+    border-radius: 10px;
+}
+
 /*Nosotros*/
 
 main {
