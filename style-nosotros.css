@@ -1023,6 +1023,11 @@ button:hover {
 
 @media (max-width: 426px) {
 
+    .main-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     /* Header & nav */
     .logo img {
         width: auto;
