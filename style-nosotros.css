@@ -458,23 +458,6 @@ button:hover {
     color: #D93904;
 }
 
-
-
-/* Boton de wtsp */
-
-.whatsapp img {
-    position: fixed;
-    z-index: 10000;
-    margin: 20px;
-    inset: auto 0 0 auto;
-
-}
-
-.whatsapp a img {
-    width: 75px;
-    height: auto;
-}
-
 @media (max-width: 1025px) {
 
     /* Header & nav */
@@ -702,20 +685,6 @@ button:hover {
     .footer-2 p,
     a {
         font-size: 15px;
-    }
-
-    /* Whatsapp*/
-
-    .whatsapp img {
-        position: fixed;
-        z-index: 10000;
-        margin: 0 10px 5px 0;
-        inset: auto 0 0 auto;
-    }
-
-    .whatsapp a img {
-        width: 40px;
-        height: auto
     }
 }
 

@@ -646,23 +646,6 @@ div.newsletter-caja {
     color: #D93904;
 }
 
-
-
-/* Boton de wtsp */
-
-.whatsapp img {
-    position: fixed;
-    z-index: 10000;
-    margin: 20px;
-    inset: auto 0 0 auto;
-
-}
-
-.whatsapp a img {
-    width: 75px;
-    height: auto;
-}
-
 @media (max-width: 1025px) {
 
     /* Header & nav */
@@ -890,6 +873,8 @@ div.newsletter-caja {
     a {
         font-size: 15px;
     }
+
+}
 
 @media (max-width: 769px) {
 
@@ -1164,19 +1149,6 @@ div.newsletter-caja {
         height: 40px;
     }
 
-    /* whatsapp*/
-
-    .whatsapp img {
-        position: fixed;
-        z-index: 10000;
-        margin: 0 10px 5px 0;
-        inset: auto 0 0 auto;
-    }
-
-    .whatsapp a img {
-        width: 40px;
-        height: auto
-    }
 }
 
 @media (max-width: 426px) {
