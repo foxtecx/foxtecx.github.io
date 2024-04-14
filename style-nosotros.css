@@ -1023,11 +1023,6 @@ button:hover {
 
 @media (max-width: 426px) {
 
-    .main-content {
-        width: 95%;
-        margin: 0 auto;
-    }
-
     /* Header & nav */
     .logo img {
         width: auto;
@@ -1111,13 +1106,13 @@ button:hover {
 
     .ad1 {
         position: relative;
-        width: 425px;
+        width: 100%;
         height: auto;
         top: 70px;
     }
 
     .ad1 img {
-        width: 425px;
+        width: 100%;
         height: auto;
     }
 
